@@ -47,7 +47,7 @@ public class ReflectingActivity : Activity
         DisplayPrompt();
 
         Console.WriteLine("Now ponder on each of the following questions as they relate to this experience.");
-        ShoweSpinner(5);
+        ShowSpinner(5);
 
         DateTime startTime = DateTime.Now;
         DateTime endTime = startTime.AddSeconds(_duration);
@@ -55,7 +55,7 @@ public class ReflectingActivity : Activity
         while (DateTime.Now < endTime)
         {
             DisplayQuestion();
-            ShoweSpinner(10);
+            ShowSpinner(10);
         }
 
         DisplayEndMessage();

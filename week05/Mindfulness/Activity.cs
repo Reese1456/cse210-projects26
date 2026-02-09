@@ -38,17 +38,17 @@ public class Activity
         _duration = int.Parse(Console.ReadLine());
         Console.Clear();
         Console.WriteLine("Get ready...");
-        ShoweSpinner(3);
+        ShowSpinner(3);
     }
 
     public void DisplayEndMessage()
     {
         Console.WriteLine("Well done!");
-        ShoweSpinner(3);
+        ShowSpinner(3);
         Console.WriteLine($"You have completed another {_duration} seconds of the {_name} activity.");
     }
 
-    public void ShoweSpinner(int seconds)
+    public void ShowSpinner(int seconds)
     {
         DateTime startTime = DateTime.Now;
         DateTime endTime = startTime.AddSeconds(seconds);
