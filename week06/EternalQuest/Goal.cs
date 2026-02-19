@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
 
-// ============================================================
-//  BASE CLASS
-// ============================================================
+
 abstract class Goal
 {
     public string Name        { get; protected set; }
