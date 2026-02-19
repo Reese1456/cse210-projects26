@@ -29,7 +29,7 @@ class QuestManager
         if (newLevel > _level)
         {
             _level = newLevel;
-            Console.WriteLine($"\n  ⭐  LEVEL UP!  You are now Level {_level}!  ⭐\n");
+            Console.WriteLine($"\n  !  LEVEL UP!  You are now Level {_level}!  !\n");
         }
     }
 
@@ -98,7 +98,7 @@ class QuestManager
         Console.Write("  Points per event: ");
         int.TryParse(Console.ReadLine(), out int pts);
 
-        Goal? g = null;
+        Goal g = null;
         switch (type)
         {
             case "1":
@@ -192,7 +192,7 @@ class QuestManager
         for (int i = 2; i < lines.Length; i++)
         {
             var p = lines[i].Split('|');
-            Goal? g = p[0] switch
+            Goal g = p[0] switch
             {
                 "Simple"    => new SimpleGoal(p[1], p[2], int.Parse(p[3]), bool.Parse(p[4])),
                 "Eternal"   => new EternalGoal(p[1], p[2], int.Parse(p[3]), int.Parse(p[4])),

@@ -13,7 +13,7 @@ class NegativeGoal : Goal
     public override int RecordEvent()
     {
         _timesRecorded++;
-        Console.WriteLine($"  😬 Oops! You lost {PointValue} points for: {Name}");
+        Console.WriteLine($"   Oops! You lost {PointValue} points for: {Name}");
         return -PointValue;   // negative!
     }
 
